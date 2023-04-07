@@ -1,9 +1,17 @@
 # Desafio "Detecção de Colisão"
  Desafio criado pelo professor <b>Caio Henrique dos Santos</b>, este desafio foi concluído e, subí-lo no GitHub é uma forma de mostrar o que estamos aprendendo e como estamos usando na prática o que é passado em sala de aula. <br>
 
-#### Esse desafio foi feito apenas com <b>IF/ELSE</b>, fiz uma versão com Operadores Lógicos, acesse aqui: <a href="logicaOperadores.js">logicaOperadores.js<a>.
+#### Esse desafio foi feito apenas com IF/ELSE, fiz uma versão com Operadores Lógicos, acesse aqui: <a href="logicaOperadores.js">logicaOperadores.js<a>.
 
  Para entender mais sobre o desafio, leia o case clicando <a href="caseColisoes.pdf">aqui</a>.
+
+ ## Colisões
+ O objetivo desse programa, é que ao informar as entradas, o mesmo indique quando ocorre uma colisão, e que tudo isso seja representado como se fosse um plano cartesiano, mas sem necessidade de ter o mesmo aparecendo na tela. <br>
+  Antes de iniciarmos o processo precisamos entender as possibilidades que a colisão ocorre, segue abaixo dois exemplos de suas respectivas saídas. <br>
+  • Com colisão:
+ #### <img src="https://user-images.githubusercontent.com/125743142/230685863-2ec60ed0-439e-4f40-bae1-d3ae0c166864.PNG"/>
+  • Sem colisão:
+ #### <img src="https://user-images.githubusercontent.com/125743142/230685861-c1dc39fb-2b15-49d9-ba76-f4301d506304.PNG"/>
 
  ## Processo
  Para estruturar o desafio, reescrevi o caso utilizando palavras chaves para entender melhor cada parte do processo, como se fosse uma lista do que fazer primeiro.
@@ -15,9 +23,9 @@
  ## Lógica
   Com o processo estruturado, iniciei a parte lógica, para isso era necessário entender o padrão que existia dentro desse case. Para que os objetos se encontrassem, um devia invadir o espaço do outro, ou seja, a segunda linha de alguma forma deveria entrar dentro da primeira, e assim, criar um retângulo.
 
-  Iniciei a estrutura de decisão (if) para verificar se os eixos X0 seja menor que o X1, e Y0 seja também menor que o Y1, era um desafio que o uso dos operadores lógicos não era permitido, então tive que verificar isso em cada uma das linhas, após essa validação. 
+  Iniciei a estrutura de decisão (IF) para verificar se os eixos X0 seja menor que o X1, e Y0 seja também menor que o Y1, era um desafio que o uso dos operadores lógicos não era permitido, então tive que verificar isso em cada uma das linhas, após essa validação. 
 
-  A parte do padrão entra nesse momento, onde criei novamente uma estrutura de decisão (if/else) dentro de cada uma das validações anteriores, e nesse caso eu coloquei que <b>SE</b>:
+  A parte do padrão entra nesse momento, onde criei novamente uma estrutura de decisão (IF/ELSE) dentro de cada uma das validações anteriores, e nesse caso eu coloquei que <b>SE</b>:
    #### • O X0 da primeira linha, tinha que ser maior que o X1 da segunda linha;
    #### • O Y0 da primeira linha tinha que ser maior que o Y1 da senhda linha;
    #### • O X1 da primeira linha, tinha que ser maior que o X0 da segunda linha;
