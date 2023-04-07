@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectando Colisões</title>
+    <!-- Desafio do Case de Colisões
+    por: Professor Caio Henrique dos Santos -->
+</head>
+
+<body>
+    <h3>Entrada:</h3>
+    Primeiro linha de teste: <br>
+    <input placeholder="X0" id="input_primeira_linha_x0">
+    <input placeholder="Y0" id="input_primeira_linha_y0">
+    <input placeholder="X1" id="input_primeira_linha_x1">
+    <input placeholder="Y1" id="input_primeira_linha_y1"> <br>
+    Segunda linha de teste: <br>
+    <input placeholder="X0" id="input_segunda_linha_x0">
+    <input placeholder="Y0" id="input_segunda_linha_y0">
+    <input placeholder="X1" id="input_segunda_linha_x1">
+    <input placeholder="Y1" id="input_segunda_linha_y1"> <br>
+
+    <button onclick="analisar_colisao()">Analisar colisão</button> <br>
+    <h3>Saída:</h3>
+    <div id="divColisao"></div>
+</body>
+
+</html>
+
+<script>
+    function analisar_colisao() {
+        var primeiroX0 = Number(input_primeira_linha_x0.value);
+        var primeiroY0 = Number(input_primeira_linha_y0.value);
+        var primeiroX1 = Number(input_primeira_linha_x1.value);
+        var primeiroY1 = Number(input_primeira_linha_y1.value);
+
+        var segundoX0 = Number(input_segunda_linha_x0.value);
+        var segundoY0 = Number(input_segunda_linha_y0.value);
+        var segundoX1 = Number(input_segunda_linha_x1.value);
+        var segundoY1 = Number(input_segunda_linha_y1.value);
+
+        if (primeiroX0 < primeiroX1) {
+            if (primeiroX0 > segundoX1) {
+                divColisao.innerHTML = "1";
+            } else {
+                divColisao.innerHTML = "0";
+            }
+        }
+        if (primeiroY0 < primeiroY1) {
+            if (primeiroY0 > segundoY1) {
+                divColisao.innerHTML = "1";
+            } else {
+                divColisao.innerHTML = "0";
+            }
+        }
+        if (segundoX0 < segundoX1) {
+            if (primeiroX1 > segundoX0) {
+                divColisao.innerHTML = "1";
+            } else {
+                divColisao.innerHTML = "0";
+            }
+        }
+        if (segundoY0 < segundoY1) {
+            if (primeiroY1 > segundoX0) {
+                divColisao.innerHTML = "1";
+            } else {
+                divColisao.innerHTML = "0";
+            }
+        }
+    }
+</script>
+
+<!-- Desafio concluído - Lucas Santos - 1ADSB -->
