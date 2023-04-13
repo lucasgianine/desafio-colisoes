@@ -44,3 +44,7 @@ Terceiro:
 #### Entendendo o case: <a href="caseColisoes.pdf">caseColisoes.pdf</a>;
 #### Código completo: <a href="desafioColisoes.html">desafioColisoes.html</a>;
 #### Cenário com Operadores lógicos (Não usado no desafio): <a href="logicaOperadores.js">logicaOperadores.js</a>
+
+## Atualização
+#### (13/04)
+Faceta com faceta também é considerado colisão, então a atualização foi de adicionar <b>=</b> nas verificações.
