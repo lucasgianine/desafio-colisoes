@@ -27,7 +27,7 @@
 
   A parte do padrão entra nesse momento, onde criei novamente uma estrutura de decisão (IF/ELSE) dentro de cada uma das validações anteriores, e nesse caso eu coloquei que <b>SE</b>:
    #### • O X0 da primeira linha, tinha que ser maior que o X1 da segunda linha;
-   #### • O Y0 da primeira linha tinha que ser maior que o Y1 da senhda linha;
+   #### • O Y0 da primeira linha tinha que ser maior que o Y1 da segunda linha;
    #### • O X1 da primeira linha, tinha que ser maior que o X0 da segunda linha;
    #### • O Y1 da primeira linha, tinha que ser maior que o Y0 da segunda linha;
  pois só nesses casos existiria uma colisão entre a primeira e segunda linha, <b>SENÃO</b> não haveria colisão.
