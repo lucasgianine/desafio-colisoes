@@ -27,3 +27,4 @@ function analisar_colisao() {
 }
 
 // Teste com operadores lógicos.
+// Última atualização: 13/04 - adicionando apenas "="
