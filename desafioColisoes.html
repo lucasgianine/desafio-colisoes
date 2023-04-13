@@ -43,28 +43,28 @@
         var segundoY1 = Number(input_segunda_linha_y1.value);
 
         if (primeiroX0 < primeiroX1) {
-            if (primeiroX0 > segundoX1) {
+            if (primeiroX0 >= segundoX1) {
                 divColisao.innerHTML = "1";
             } else {
                 divColisao.innerHTML = "0";
             }
         }
         if (primeiroY0 < primeiroY1) {
-            if (primeiroY0 > segundoY1) {
+            if (primeiroY0 >= segundoY1) {
                 divColisao.innerHTML = "1";
             } else {
                 divColisao.innerHTML = "0";
             }
         }
         if (segundoX0 < segundoX1) {
-            if (primeiroX1 > segundoX0) {
+            if (primeiroX1 >= segundoX0) {
                 divColisao.innerHTML = "1";
             } else {
                 divColisao.innerHTML = "0";
             }
         }
         if (segundoY0 < segundoY1) {
-            if (primeiroY1 > segundoX0) {
+            if (primeiroY1 >= segundoX0) {
                 divColisao.innerHTML = "1";
             } else {
                 divColisao.innerHTML = "0";
@@ -74,3 +74,4 @@
 </script>
 
 <!-- Desafio concluído - Lucas Santos - 1ADSB -->
+<!-- Última atualização: 13/04 -->
